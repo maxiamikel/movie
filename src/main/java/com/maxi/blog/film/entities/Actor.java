@@ -16,9 +16,9 @@ import jakarta.persistence.Table;
 
 @Entity
 @Table(name = "actors")
-public class Actor implements Serializable{
+public class Actor implements Serializable {
 
-    public static final long serialVersionUID=1L;
+    public static final long serialVersionUID = 1L;
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
@@ -47,7 +47,6 @@ public class Actor implements Serializable{
         return id;
     }
 
-    
     public Movie getMovie() {
         return movie;
     }
@@ -108,7 +107,5 @@ public class Actor implements Serializable{
             return false;
         return true;
     }
-    
-    
-    
+
 }
