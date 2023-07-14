@@ -1,8 +1,12 @@
 package com.maxi.blog.film.services;
 
+import java.util.List;
+
 import com.maxi.blog.film.entities.Movie;
 
 public interface MovieService {
     
-    void save(Movie movie);
+    Movie save(Movie movie);
+
+    List<Movie> findAll();
 }
