@@ -34,7 +34,7 @@ public class Comment implements Serializable{
     private LocalDate datePub;
 
     @Column(name = "pub_time")
-    @Temporal(TemporalType.TIME)
+    @Temporal(TemporalType.DATE)
     @DateTimeFormat(iso = ISO.TIME)
     private LocalDate timePub;
 

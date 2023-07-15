@@ -10,12 +10,11 @@ import jakarta.transaction.Transactional;
 
 @Service
 @Transactional
-public class ActorServiceImpl implements ActorService {
+public class ActorServiceImpl {
     
     @Autowired
     private ActorRepository actorRepository;
 
-    @Override
     public void save(Actor actor) {
         actorRepository.save(actor);
         
